@@ -2,13 +2,16 @@ function computerPlay(){
     const select = ["rock","papar","scissors"]
     return select[Math.floor(Math.random()* select.length)];
 }
-console.log(computerPlay());
 
-function playRound(playSelection,computerSelection){
-    return playSelection, computerSelection;
+function playRound(playerSelection,computerSelection){
+    if(playerSelection === computerSelection){
+        return " it is a tie";
+    }
+       
+    
 }
-    const playSelection = "rock";
+    const playerSelection = "rock";
     const computerSelection = computerPlay()
-    console.log (playRound(playSelection,computerSelection))
+    console.log (playRound(playerSelection,computerSelection));
 
 
