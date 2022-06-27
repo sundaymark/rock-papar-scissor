@@ -7,41 +7,40 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return " it is a tie";
     }
-    
-    else if (playerSelection === 'rock' && computerSelection === 'scissor')
-     {
-         playerSelection = 'rock'
+
+    if (playerSelection === 'rock' && computerSelection === 'scissors') {
+        playerSelection = 'rock'
         return "you win rock beat scissors"
     }
 
-    else if (playerSelection === 'papar' && computerSelection === 'rock') {
+    if (playerSelection === 'papar' && computerSelection === 'rock') {
         playerSelection = 'papar'
         return "you win papar beat rock"
     }
 
-    else if (playerSelection === 'scissor' && computerSelection === 'papar') {
-        playerSelection = 'scissor'
+    if (playerSelection === 'scissors' && computerSelection === 'papar') {
+        playerSelection = 'scissors'
         return "you win scissor beat papar"
     }
     //computer selection section
-    else if (computerSelection === 'rock' && playerSelection === 'scissor') {
-        playerSelection = 'scissor'
-        return "you loss rock beat scissor"
+    if (computerSelection === 'rock' && playerSelection === 'scissors') {
+        playerSelection = 'scissors'
+        return "you loss rock beat scissors"
     }
 
-    else if (computerSelection === 'papar' && playerSelection === 'rock') {
+    if (computerSelection === 'papar' && playerSelection === 'rock') {
         playerSelection = 'rock'
         return "you loss papar beat rock"
     }
 
-    else if (computerSelection === 'scissor' && playerSelection === 'papar') {
+    if (computerSelection === 'scissors' && playerSelection === 'papar') {
         playerSelection = 'papar'
-        return "you loss scissor beat papar "
+        return "you loss scissors beat papar "
     }
 
 
 }
-let playerSelection = "rock";
+let playerSelection = prompt('enter a selection');
 const computerSelection = computerPlay()
 console.log(playRound(playerSelection, computerSelection));
 
