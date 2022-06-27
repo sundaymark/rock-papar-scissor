@@ -7,36 +7,41 @@ function playRound(playerSelection, computerSelection) {
     if (playerSelection === computerSelection) {
         return " it is a tie";
     }
-
-    if (
-        (playerSelection === 'rock' && computerSelection === 'scissor')
-    ) {
+    
+    else if (playerSelection === 'rock' && computerSelection === 'scissor')
+     {
+         playerSelection = 'rock'
         return "you win rock beat scissors"
     }
 
-    if (playerSelection === 'papar' && computerSelection === 'rock') {
+    else if (playerSelection === 'papar' && computerSelection === 'rock') {
+        playerSelection = 'papar'
         return "you win papar beat rock"
     }
 
-    if (playerSelection === 'scissor' && computerSelection === 'papar') {
-        return "you win scissor beat pappar"
+    else if (playerSelection === 'scissor' && computerSelection === 'papar') {
+        playerSelection = 'scissor'
+        return "you win scissor beat papar"
     }
     //computer selection section
-    if (computerSelection === 'rock' && playerSelection === 'scissor') {
+    else if (computerSelection === 'rock' && playerSelection === 'scissor') {
+        playerSelection = 'scissor'
         return "you loss rock beat scissor"
     }
 
-    if (computerSelection === 'papar' && playerSelection === 'rock') {
+    else if (computerSelection === 'papar' && playerSelection === 'rock') {
+        playerSelection = 'rock'
         return "you loss papar beat rock"
     }
 
-    if (computerSelection === 'scissor' && playerSelection === 'papar') {
+    else if (computerSelection === 'scissor' && playerSelection === 'papar') {
+        playerSelection = 'papar'
         return "you loss scissor beat papar "
     }
 
 
 }
-const playerSelection = "papar";
+let playerSelection = "rock";
 const computerSelection = computerPlay()
 console.log(playRound(playerSelection, computerSelection));
 
