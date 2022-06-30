@@ -40,7 +40,7 @@ function playRound(playerSelection, computerSelection) {
 
 
 }
-let playerSelection = prompt('enter a selection');
+const playerSelection = prompt('enter a selection');
 const computerSelection = computerPlay()
 console.log(playRound(playerSelection, computerSelection));
 
