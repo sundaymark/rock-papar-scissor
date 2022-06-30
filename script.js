@@ -1,5 +1,5 @@
 function computerPlay() {
-    const select = ["rock", "papar", "scissors"]
+    const select = ["rock", "paper", "scissors"]
     return select[Math.floor(Math.random() * select.length)];
 }
 
@@ -13,14 +13,14 @@ function playRound(playerSelection, computerSelection) {
         return "you win rock beat scissors"
     }
 
-    if (playerSelection === 'papar' && computerSelection === 'rock') {
-        playerSelection = 'papar'
-        return "you win papar beat rock"
+    if (playerSelection === 'paper' && computerSelection === 'rock') {
+        playerSelection = 'paper'
+        return "you win paper beat rock"
     }
 
-    if (playerSelection === 'scissors' && computerSelection === 'papar') {
+    if (playerSelection === 'scissors' && computerSelection === 'paper') {
         playerSelection = 'scissors'
-        return "you win scissor beat papar"
+        return "you win scissor beat paper"
     }
     //computer selection section
     if (computerSelection === 'rock' && playerSelection === 'scissors') {
@@ -28,20 +28,27 @@ function playRound(playerSelection, computerSelection) {
         return "you loss rock beat scissors"
     }
 
-    if (computerSelection === 'papar' && playerSelection === 'rock') {
-        playerSelection = 'rock'
-        return "you loss papar beat rock"
+    if (computerSelection === 'paper' && playerSelection === 'rock') {
+        computerSelection = 'paper'
+        return "you loss paper beat rock"
     }
 
-    if (computerSelection === 'scissors' && playerSelection === 'papar') {
-        playerSelection = 'papar'
-        return "you loss scissors beat papar "
+    if (computerSelection === 'scissors' && playerSelection === 'paper') {
+        computerSelection = 'scissors'
+        return "you loss scissors beat paper "
     }
-
-
 }
-const playerSelection = prompt('enter a selection');
+const playerSelection = prompt('enter a selection').toLocaleLowerCase();
 const computerSelection = computerPlay()
-console.log(playRound(playerSelection, computerSelection));
+
+function game() {
+    playRound(playerSelection, computerSelection);
+    for (i = 0; i < 5; i++);
+}
+
+    
+
+
+
 
 
