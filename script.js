@@ -38,17 +38,21 @@ function playRound(playerSelection, computerSelection) {
         return "you loss scissors beat paper "
     }
 }
-const playerSelection = prompt('enter a selection').toLocaleLowerCase();
+let playerSelection;
 const computerSelection = computerPlay()
 
 function game() {
-    playRound(playerSelection, computerSelection);
-    for (i = 0; i < 5; i++);
+    for (i = 0; i <= 4; i++) {
+         playerSelection = prompt('enter a selection');
+        playRound(playerSelection, computerSelection);
+        //if(playerSelection =)
+        
+        
+
+    }
 }
 
-    
-
-
+console.log(game());
 
 
 
