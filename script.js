@@ -42,17 +42,22 @@ let playerSelection;
 const computerSelection = computerPlay()
 
 function game() {
-    for (i = 0; i <= 4; i++) {
-         playerSelection = prompt('enter a selection');
-        playRound(playerSelection, computerSelection);
-        //if(playerSelection =)
-        
-        
-
-    }
+    let computerScore = 5;
+    let playerScore = 0;
+    let score = ++computerScore +' ' + ++playerScore;
+    console.log(score)
+    // for (i = 0; i <= 4; i++) {
+    //      playerSelection = prompt('enter a selection');
+    //     playRound(playerSelection, computerSelection);
+    //     //if(playerSelection =)
+    //     if(playRound(playerSelection,computerSelection).includes('you win')){
+    //         console.log('you beat the computer');
+    //     }else if(playRound(playerSelection,computerSelection).includes('you loss')){
+    //         console.log('the computer beat you')
+    //     }
+    // }
 }
-
-console.log(game());
+game();
 
 
 
