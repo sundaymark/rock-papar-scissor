@@ -1,5 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
 h1{
     text-align: center;
     background-color: darkslategrey;
     color: whitesmoke;
 }
+
+.container {
+    background-color: rgb(15, 17, 17);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 200px;
+    font-size: 20px;
+}
+
+button{
+    background-color: rgb(27, 42, 42);
+    color: whitesmoke;
+    width: 15%;
+    border-radius: 10px;
+    border: 2px solid white;
+    font-size: 20px;
+
+}
+
+button:hover{
+    background-color: rgb(68, 97, 97);
+    color: aquamarine;
+}
+
+ .results{
+    background-color: rgb(15, 17, 17);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 200px;
+    font-size: 30px;
+}
+
+.declare{
+    background-color: rgb(15, 17, 17);
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    width: 60%;
+    margin-left: 200px;
+    font-size: 30px;
+} 
+
+
