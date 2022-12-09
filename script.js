@@ -63,7 +63,7 @@ function playRound(playerSelection, computerSelection) {
 
 function declareWinner() {
   if (computerScore.innerText === '5' && playerScore.innerText < '5') {
-    declare.textContent = 'You lose the game, ohh! We lost our Planet ';
+    declare.textContent = 'You lose the game, ohh! We lost our Planet, Play again to Reclaime Our Planet ';
     computerScore.innerText = '0';
     playerScore.innerText = '0';
   } else if (playerScore.innerText === '5' && computerScore.innerText < '5') {
